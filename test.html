@@ -111,7 +111,7 @@
 			Interpolator.prototype.anims =  new Array();
 		}
 		var anims = Interpolator.prototype.anims;
-		for (i=0;i<anims.length;i++){
+		for (var i=0;i<anims.length;i++){
 			anims[i].update();
 		}
 	}
@@ -125,7 +125,7 @@
 		this.height = height;
 		this.m_text = '0';//记录当前的文字
 		//---------
-		this.color_card_bg = '#000000';//背景色
+		this.color_card_bg = '#FCFCFC';//背景色
 		this.color_text = '#5D656D';//文字颜色
 		this.color_storke = '#606060'//描边颜色
 		this.radius_card = 4;//圆角
@@ -242,7 +242,7 @@
 				that.cube_flip.rotation.x = (value/360.0) * (Math.PI * 2);
 			},function(){
 				setCurrText(text);
-				that.cube_flip.rotation.x = (-90/360.0) * (Math.PI * 2);
+				// that.cube_flip.rotation.x = (-90/360.0) * (Math.PI * 2);
 			}).start(function(){
 				setNextText(text);
 			})
@@ -300,14 +300,14 @@
 
         //定义  渲染器 renderer
         var renderer = new THREE.WebGLRenderer({
-			canvas: document.getElementById('mainCanvas'),
+			canvas: mainCanvas,
 			 //增加下面两个属性，可以抗锯齿
 			antialias:true,
 			alpha:true
 			});
 		renderer.setPixelRatio(window.devicePixelRatio)
 		renderer.setSize(mainCanvas.clientWidth, mainCanvas.clientHeight)
-        renderer.setClearColor(0x000000);   //背景色  黑色
+        renderer.setClearColor(0xF9F9F9);   //背景色  黑色
 
         //定义  场景scene
         var scene = new THREE.Scene();
