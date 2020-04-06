@@ -47,6 +47,7 @@
 		this.curValue = start;
 		this.endValue = end;
 		this.duration = duration; 
+		this.mark_as_done = false;
 		//方法
 		this.start =  function (callback){
 			let a = Date.now();
@@ -70,7 +71,11 @@
 		}
 		this.compute = function(cost){
 			if(cost > this.duration & this.curValue == this.endValue){//已经结束
-				this.done();
+				if (this.mark_as_done){
+					this.done();
+				}else{
+					this.mark_as_done = true;
+				}
 				return
 			}
 			this.curValue = (this.startValue + (this.endValue - this.startValue) * (cost / this.duration))
