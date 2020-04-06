@@ -244,7 +244,6 @@
 			};
 			
 			new Interpolator(-90,90,800).addUpdateCallBack(function (value){
-				console.log(value);
 				that.cube_flip.rotation.x = (value/360.0) * (Math.PI * 2);
 			},function(){
 				setCurrText(text);
