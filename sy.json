@@ -38,6 +38,58 @@
     "searchUrl": "http:\/\/www.kenshuwu.com\/web\/search.php?q={{key}}&p={{page}}",
     "weight": 0
 },
+      
+{
+    "bookSourceComment": "",
+    "bookSourceGroup": "♥ Li ♥",
+    "bookSourceName": "【九桃小说】",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https:\/\/m.9txs.org",
+    "customOrder": -22,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "【全部分类】\/sort\/library\/{{page}}.html\n玄幻奇幻::\/sort\/xuanhuan\/{{page}}.html\n武侠修真::\/sort\/wuxia\/{{page}}.html\n都市生活::\/sort\/dushi\/{{page}}.html\n历史军事::\/sort\/lishi\/{{page}}.html\n游戏竞技::\/sort\/youxi\/{{page}}.html\n科幻未来::\/sort\/kehuan\/{{page}}.html\n悬疑灵异::\/sort\/xuanyi\/{{page}}.html\n二次元::\/sort\/erciyuan\/{{page}}.html\n经典短篇::\/sort\/jingdian\/{{page}}.html\n古代言情::\/sort\/gudai\/{{page}}.html\n现代言情::\/sort\/xiandai\/{{page}}.html\n幻想奇缘::\/sort\/huanxiang\/{{page}}.html\n浪漫青春::\/sort\/qingchun\/{{page}}.html\n网络情缘::\/sort\/wangluo\/{{page}}.html\n科幻空间::\/sort\/kongjian\/{{page}}.html\n恐怖灵异::\/sort\/lingyi\/{{page}}.html\nN次元::\/sort\/tongren\/{{page}}.html\n言情美文::\/sort\/yanqing\/{{page}}.html\n其他类型::\/sort\/qita\/{{page}}.html",
+    "lastUpdateTime": 1627317058247,
+    "ruleBookInfo": {
+        "author": "tag.p.1@text",
+        "intro": "",
+        "kind": "class.line@tag.a@text",
+        "lastChapter": "class.chapter@text##最新：",
+        "name": "class.booktitle@text",
+        "tocUrl": "text.查看目录@href",
+        "wordCount": "tag.span.1@text"
+    },
+    "ruleContent": {
+        "content": "class.content@tag.p!0@html",
+        "imageStyle": "FULL",
+        "replaceRegex": "##您可以.*"
+    },
+    "ruleExplore": {
+        "author": "tag.p.1@textNodes",
+        "bookList": "class.list@li",
+        "bookUrl": "tag.a@href",
+        "coverUrl": "tag.img@src",
+        "intro": "tag.p.2@text",
+        "name": "tag.p.0@text"
+    },
+    "ruleSearch": {
+        "author": "tag.p.1@textNodes",
+        "bookList": "class.list@tag.li",
+        "bookUrl": "tag.a@href",
+        "coverUrl": "tag.img@src",
+        "intro": "class.intro@text",
+        "kind": "tag.span@text",
+        "name": "class.bookname@text"
+    },
+    "ruleToc": {
+        "chapterList": "class.read@tag.li",
+        "chapterName": "tag.a@text",
+        "chapterUrl": "tag.a@href",
+        "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https:\/\/so.9txs.org\/m\/,{\n\"charset\": \"UTF-8\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+},
 {
     "bookSourceComment": "",
     "bookSourceGroup": "🎉 精品",
