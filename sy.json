@@ -616,5 +616,44 @@
     },
     "searchUrl": "/modules/article/waps.php,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
     "weight": 0
-  }
+  },
+  {
+    "bookSourceUrl": "https://m.ezkanshu.org/",
+    "bookSourceType": 0,
+    "bookSourceName": "ez看书",
+    "bookSourceGroup": "花生",
+    "bookSourceComment": "",
+    "loginUrl": "",
+    "bookUrlPattern": "",
+    "header": "",
+    "searchUrl": "https://m.ezkanshu.org/s.php,{\"charset\":\"gbk\",\"method\":\"POST\",\"body\":\"type=articlename&s={{key}}&submit=\"}",
+    "exploreUrl": "",
+    "enabled": true,
+    "enabledExplore": true,
+    "weight": 0,
+    "customOrder": 0,
+    "lastUpdateTime": 1629362553207,
+    "ruleSearch": {
+        "bookList": "class.line",
+        "name": "tag.a.1@text",
+        "author": "tag.a.2@text",
+        "kind": "tag.a.0@text",
+        "bookUrl": "tag.a.1@href"
+    },
+    "ruleExplore": {},
+    "ruleBookInfo": {
+        "coverUrl": "class.block_img2@tag.img@src",
+        "tocUrl": "text.查看目录@href"
+    },
+    "ruleToc": {
+        "chapterList": "class.chapter@tag.li@tag.a",
+        "chapterName": "title",
+        "chapterUrl": "href",
+        "nextTocUrl": "text.下一页@href"
+    },
+    "ruleContent": {
+        "content": "id.nr1@html",
+        "nextContentUrl": "id.pb_next@href"
+    }
+}
 ]
